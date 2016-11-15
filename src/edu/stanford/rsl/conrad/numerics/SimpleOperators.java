@@ -1,5 +1,12 @@
 package edu.stanford.rsl.conrad.numerics;
 
+import java.util.Iterator;
+
+import edu.stanford.rsl.conrad.numerics.SimpleMatrix.InversionType;
+import edu.stanford.rsl.conrad.utils.CONRAD;
+import Jama.EigenvalueDecomposition;
+import Jama.Matrix;
+
 
 
 /**
@@ -329,9 +336,7 @@ public abstract class SimpleOperators {
 			result.setElementValue(c, SimpleOperators.multiplyInnerProd(v, M.getCol(c)));
 		return result;
 	}
-<<<<<<< HEAD
-=======
-	
+
 	/**
 	 * Performs an interpolation between two rigid transformations (rotation and translation) 
 	 * matrices, represented as 4x4 affine matrices.
@@ -527,9 +532,6 @@ public abstract class SimpleOperators {
 		return new SimpleVector(v1, v2, v3, v4);
 		
 	}
->>>>>>> akmaier/master
-
-
 }
 /*
  * Copyright (C) 2010-2014 Andreas Keil
