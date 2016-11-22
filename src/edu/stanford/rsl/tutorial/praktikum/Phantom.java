@@ -18,13 +18,13 @@ public class Phantom extends Grid2D{
 		this.setOrigin(origin);
 		
 		
-		/*//create square with intensity 0.2
+		//create square with intensity 0.2
 		int edgeLength = width/8;
 		for (int row =  edgeLength ; row < width/2 +  edgeLength ; row++) {
 			for (int col =  edgeLength ; col < height/2 +  edgeLength ; col++) {
 				this.setAtIndex(row, col, (0.2f));
 			}
-		}*/
+		}
 		
 		//create circle with intensity 0.5
 		int xCenter = width/2 ;//+ width/8;
@@ -38,7 +38,7 @@ public class Phantom extends Grid2D{
 			}
 		}
 		
-		/*//create triangle with intensity 0.7
+		//create triangle with intensity 0.7
 		int count = 0;
 		for (int row = 2 * height/8; row < height/2; row++){
 			for (int col = 4 * width/8; col < width; col++){
@@ -47,7 +47,7 @@ public class Phantom extends Grid2D{
 				}
 			}
 			count++;
-		}*/
+		}
 	}
 	
 	public static void main(String[] args){
