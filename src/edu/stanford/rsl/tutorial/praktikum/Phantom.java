@@ -13,18 +13,18 @@ public class Phantom extends Grid2D{
 		super(width, height);
 		this.setSpacing(spacing);
 		
-		double[] origin = {-(width-1) * (spacing[0]/2), -(height-1) * (spacing[1]/2)};
+		double[] origin = {-(width-1.0) * (spacing[0]/2.0), -(height-1.0) * (spacing[1]/2.0)};
 		
 		this.setOrigin(origin);
 		
 		
-		/*//create square with intensity 0.2
+		//create square with intensity 0.2
 		int edgeLength = width/8;
 		for (int row =  edgeLength ; row < width/2 +  edgeLength ; row++) {
 			for (int col =  edgeLength ; col < height/2 +  edgeLength ; col++) {
 				this.setAtIndex(row, col, (0.2f));
 			}
-		}*/
+		}
 		
 		//create circle with intensity 0.5
 		int xCenter = width/2 ;//+ width/8;
@@ -38,7 +38,7 @@ public class Phantom extends Grid2D{
 			}
 		}
 		
-		/*//create triangle with intensity 0.7
+		//create triangle with intensity 0.7
 		int count = 0;
 		for (int row = 2 * height/8; row < height/2; row++){
 			for (int col = 4 * width/8; col < width; col++){
@@ -47,12 +47,12 @@ public class Phantom extends Grid2D{
 				}
 			}
 			count++;
-		}*/
+		}
 	}
 	
 	public static void main(String[] args){
 		ImageJ ui = new ImageJ();
-		double[] spacingA = {0.5, 0.5};
+		double[] spacingA = {1.0, 1.0};
 		Phantom a = new Phantom(512, 512, spacingA);
 		
 		double[] spacingB = {0.8, 0.8};
